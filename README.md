@@ -1,17 +1,22 @@
-# Gensim
-https://www.machinelearningplus.com/nlp/gensim-tutorial/
-## Difinition
-* Gensim is billed as a Natural Language Processing package that does ‘Topic Modeling for Humans’.  
-* Topic modeling, it is a technique to extract the underlying topics from large volumes of text. Gensim provides algorithms like LDA and LSI and the necessary sophistication to build high-quality topic models.
-* It is a great package for processing texts, working with word vector models (such as Word2Vec, FastText etc) and for building topic models.
-* It lets you handle large text files without having to load the entire file in memory.
-* It is a great package for processing texts, working with word vector models (such as Word2Vec, FastText etc) and for building topic models.
-* it lets you handle large text files without having to load the entire file in memory.
+## Index
+![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
+![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
 
-## How it works?
-* In order to work on text documents, Gensim requires the words (aka tokens) be converted to unique ids. In order to achieve that, Gensim lets you create a Dictionary object that maps each word to a unique id.
-* By converting your text/sentences to a [list of words] and pass it to the corpora.Dictionary() object.
-* gensim handlecan handle input text typically in 3 different forms:
-  * As sentences stored in python’s native list object
-  * As one single text file, small or large.
-  * In multiple text files.
+## Natural Language Processing (NLP)
+![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
+* _**Natural language processing**_ is a subset of Artificial intelligence that helps computers to understand, interpret, and utilize the human languages. 
+<img src="https://user-images.githubusercontent.com/12748752/150695497-d66d6dae-37e6-48d4-8144-a7b8473435c9.png" ALIGN="right" width=50% />
+
+* NLP allows computers to communicate with peoples using human languages. 
+* NLP also provides computers with the ability to read text, hear speech, and try to intrepret it. 
+* NLP draws several disciplines, including Computational linguistics and computer science, as this attempts to fill the gap in between human and computer communication.
+
+
+* NLP breaks down language into shorter, more basic pieces, called tokens(period, words, etc), and attempts to understand the relationships of tokens. This approach often uses higher-level NLP features, such as:
+
+- **Sentiment analysis:** It identifies the general mood, or subjective opinions, which is stored in large amount of texts, It is more useful for opinion mining.
+
+- **Contextual Extraction:** Extract structured data from text-base sources.
+- **Text-to-Speech and Speech-to-text:** It transforms the voice into text and vice a versa.
+- **Document Summarization:** Automatically creates a synopsis, condensing large amounts of text.
+- **Machine Translation:** Translates the text or speech of one language into another language.
