@@ -2,8 +2,8 @@
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
 * Natural Language Processing (NLP)
 * Why learn NLP?
-* [Word Embeddings]()
-* References
+* [Word Embeddings](https://github.com/iAmKankan/Natural-Language-Processing-NLP-Tutorial/blob/master/word_embedding.md)
+* [References](url)
 ## Natural Language Processing (NLP)
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
 * _**Natural language processing**_ is a subset of Artificial intelligence that helps computers to understand, interpret, and utilize the human languages. 
