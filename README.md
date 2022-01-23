@@ -1,7 +1,7 @@
 ## Index
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
 * [Natural Language Processing (NLP)](#natural-language-processing-nlp)
-* Why learn NLP?
+* [Why learn NLP?](#why-learn-nlp)
 * [Word Embeddings](https://github.com/iAmKankan/Natural-Language-Processing-NLP-Tutorial/blob/master/word_embedding.md)
 * [References](#references)
 ## Natural Language Processing (NLP)
