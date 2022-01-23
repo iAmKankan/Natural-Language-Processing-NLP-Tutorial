@@ -1,6 +1,9 @@
 ## Index
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
-
+* Natural Language Processing (NLP)
+* Why learn NLP?
+* [Word Embeddings]()
+* References
 ## Natural Language Processing (NLP)
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
 * _**Natural language processing**_ is a subset of Artificial intelligence that helps computers to understand, interpret, and utilize the human languages. 
@@ -50,4 +53,6 @@ To achieve one of the above applications and other basic NLP preprocessing, ther
 Most of the tools are written in Java and have similar functionalities.And Some of them are robust and have a different variety of NLP tools are avaialable. However, when it comes to ease to use and explaination of the concepts, NLTK scores really high.</p><p>
 NLTK tool is also a best learning kit because the learning curve of Python(NLTK is written on this) is very fast. NLTK incorporated most of the NLP tasks, it's too elegant and easy to work with. For all these kind of reasons, NLTK became one of the popular libraries in the NLP community.</p>
 
-
+## References
+![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
+* iNeuron.ai
