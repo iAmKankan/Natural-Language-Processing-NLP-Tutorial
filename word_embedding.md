@@ -10,12 +10,22 @@
 * Word embedding is just a fancy name for a [_`feature vector`_](https://ds055uzetaobb.cloudfront.net/brioche/uploads/JERsKXkW4T-screen-shot-2016-05-05-at-123118-pm.png) that represents a word.
 * We can take a categorical object (a word in this case) and then map this object to a list of numbers in other words a vector we say we have embedded this word into a vector space. 
 * So that's why we call them word embeddings.
+
 ### Word Embedding properties
 * The operation (text to number) or vectorization is done either on **"word"** or on "**character**" level.
 * The process of converting words into numbers are called **Vectorization**.
 * This is one of the most important advances in Deep NLP research.
 * Word Emeddings allow you to map words into a vector space.
 * **Once you can represent something as a vector, you can perform arithmetic on it.** So, this is where the famous **_king - man = queen - woman_**, **_December - Novemeber = July - June_** or **_France - Paris = England - London_** come from.
+
+### Word Embedding Mathematically Representation
+* **Embedding mathematically represents a mapping , <a>f: X &rarr; Y,</a> which is a function**. 
+* Where the function is -
+    * **injective** (which is what we call an **injective function** , each Y has a unique X correspondence, and vice versa)
+    * **structure-preserving** ( structure preservation , for example, X1 < X2 in the space to which X belongs, then the same applies to Y1 <Y2 in the space to which Y belongs after mapping).
+
+* So for word embedding, the word word is mapped to another space, where this mapping has the characteristics of injective and structure-preserving.
+
 * There are two most popular algorithms for finding Word Embeddings-
     - **Word2vac**
     - **GloVe**
