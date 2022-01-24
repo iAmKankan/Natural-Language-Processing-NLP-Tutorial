@@ -56,7 +56,7 @@ NLTK tool is also a best learning kit because the learning curve of Python(NLTK 
 ### Main Approaches of NLP
 ![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
 
-<img src="(https://user-images.githubusercontent.com/12748752/150872225-4f7b267c-0672-44b7-aac3-0851c029250f.png" width=100% />
+<img src="https://user-images.githubusercontent.com/12748752/150872225-4f7b267c-0672-44b7-aac3-0851c029250f.png" width=100% />
 
 ## References
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
