@@ -53,6 +53,11 @@ To achieve one of the above applications and other basic NLP preprocessing, ther
 Most of the tools are written in Java and have similar functionalities.And Some of them are robust and have a different variety of NLP tools are avaialable. However, when it comes to ease to use and explaination of the concepts, NLTK scores really high.</p><p>
 NLTK tool is also a best learning kit because the learning curve of Python(NLTK is written on this) is very fast. NLTK incorporated most of the NLP tasks, it's too elegant and easy to work with. For all these kind of reasons, NLTK became one of the popular libraries in the NLP community.</p>
 
+### Main Approaches of NLP
+![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
+
+<img src="https://user-images.githubusercontent.com/12748752/150870959-14588878-322f-4b29-aac5-3f3eaa253391.png" width=100% />
+
 ## References
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
 * iNeuron.ai
