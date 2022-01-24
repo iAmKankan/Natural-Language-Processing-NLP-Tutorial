@@ -24,7 +24,17 @@
     * **injective** (which is what we call an **injective function** , each Y has a unique X correspondence, and vice versa)
     * **structure-preserving** ( structure preservation , for example, X1 < X2 in the space to which X belongs, then the same applies to Y1 <Y2 in the space to which Y belongs after mapping).
 
-* So for word embedding, the word word is mapped to another space, where this mapping has the characteristics of injective and structure-preserving.
+* _**So for word embedding, the word word is mapped to another space, where this mapping has the characteristics of injective and structure-preserving.**_
+
+
+### Word Embedding types
+* The neural network cannot train the original text data. 
+* We need to process the text data into numerical tensors first. 
+* This process is also called **_text vectorization_**.
+* There are several strategies for text vectorization:
+1. _**Split text into words**_, each word is converted into a vector
+2. _**Split text into characters**_, each character is converted into a vector
+3. Extract _**n-gram**_ of words or characters n-gram to a vector
 
 * There are two most popular algorithms for finding Word Embeddings-
     - **Word2vac**
