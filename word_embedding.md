@@ -38,6 +38,10 @@
 * There are two main methods for word vectorization:
    1. One-hot Encoding
    2. Word Embedding
+* There are two most popular algorithms for finding Word Embeddings-
+    - **Word2vac**
+    - **GloVe**
+
 #### 1. One-hot Encoding 
 * Why is it called one-hot? 
    * After each word is one-hot encoded, only one position has an element of 1 and the other positions are all 0.
@@ -52,12 +56,7 @@
 * This way requires a very high dimension, because if all vocabularies have **100,000** words, then each word needs to be represented by a vector of length **100,000**.
    * **_the_** corresponds to (1, 0, 0, 0, ..., 0) (length is **100,000**)
    * And so on, to get high-dimensional sparse tensors.
+
 #### Why One-Hot Vectors are bad?
 * A main reason is that one-hot word vectors cannot accurately express the similarity between different words, such as the [_cosine similarity_](https://github.com/iAmKankan/Mathematics/blob/main/linearAlgebra.md#cosine-similarity) that we often use. 
 * Since the [_cosine similarity_](https://github.com/iAmKankan/Mathematics/blob/main/linearAlgebra.md#cosine-similarity) between one-hot vectors of any two different words is 0, one-hot vectors cannot encode similarities among words.
-
-
-* There are two most popular algorithms for finding Word Embeddings-
-    - **Word2vac**
-    - **GloVe**
-
