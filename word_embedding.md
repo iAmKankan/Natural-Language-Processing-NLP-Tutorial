@@ -38,9 +38,6 @@
 * There are two main methods for word vectorization:
    1. One-hot Encoding
    2. Word Embedding
-* There are two most popular algorithms for finding Word Embeddings-
-    - **Word2vac**
-    - **GloVe**
 
 ### 1. One-hot Encoding 
 * Why is it called one-hot? 
@@ -79,3 +76,8 @@
 * For example, the distance between the vectors can reflect gender, age, etc. (this requires training, and the unembedding layer has no structure), for example:
    * **man-woman = boy-girl**
    * **man-daddy = woman-mother**
+
+* There are two most popular algorithms for finding Word Embeddings-
+    - **Word2vac**
+    - **GloVe**
+
