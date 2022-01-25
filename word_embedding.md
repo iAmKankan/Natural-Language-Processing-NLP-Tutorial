@@ -71,20 +71,11 @@
 
 * We assume that the embedded space is 256 dimensions (generally 256, 512 or 1024 dimensions, the larger the vocabulary, the higher the corresponding spatial dimension)
 
-**Then
-the corresponding (
-0.1,
-0.2, 0.4,
-0 , ...) (vector length is 256) boy corresponds to (0.23, 0.14, 0, 0 , ...) is corresponding to (0, 0 , 0.41, 0.9, ...) , 0.82, 0, 0.14, ...)**
+* **Then the corresponding ( 0.1, 0.2, 0.4, 0 , ...) (vector length is 256) boy corresponds to (0.23, 0.14, 0, 0 , ...) is corresponding to (0, 0 , 0.41, 0.9, ...) , 0.82, 0, 0.14, ...)**
 
-One-hot encoding is very simple, but the spatial dimension is high and for one-hot encoding, the distance between any two words is $$\sqrt{2}$$.
+*  But in practice, the word **(boy) to word (man) should be very close** (because they are closely related), and **the word (cat) to word (stone) should be very far** (because they are basically unrelated).
 
- But in practice, the word **(boy) to word (man) should be very close** (because they are closely related), and **the word (cat) to word (stone) should be very far** (because they are basically unrelated).
-
-Embedding space has low dimensions and allows space to have structure .
-
-For example, the distance between the vectors can reflect gender, age, etc. (this requires training, and the unembedding layer has no structure), for example:
-
-**man-woman = boy-girl**
-
-**man-daddy = woman-mother**
+* Embedding space has low dimensions and allows space to have structure .
+* For example, the distance between the vectors can reflect gender, age, etc. (this requires training, and the unembedding layer has no structure), for example:
+   * **man-woman = boy-girl**
+   * **man-daddy = woman-mother**
