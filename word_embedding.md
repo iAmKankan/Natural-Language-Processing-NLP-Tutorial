@@ -53,8 +53,8 @@
    * **_the_** corresponds to (1, 0, 0, 0, ..., 0) (length is **100,000**)
    * And so on, to get high-dimensional sparse tensors.
 #### Why One-Hot Vectors are bad?
-* A main reason is that one-hot word vectors cannot accurately express the similarity between different words, such as the [`cosine similarity`](https://github.com/iAmKankan/Mathematics/blob/main/linearAlgebra.md#cosine-similarity) that we often use. 
-* Since the [`cosine similarity`](https://github.com/iAmKankan/Mathematics/blob/main/linearAlgebra.md#cosine-similarity) between one-hot vectors of any two different words is 0, one-hot vectors cannot encode similarities among words.
+* A main reason is that one-hot word vectors cannot accurately express the similarity between different words, such as the [_cosine similarity_](https://github.com/iAmKankan/Mathematics/blob/main/linearAlgebra.md#cosine-similarity) that we often use. 
+* Since the [_cosine similarity_](https://github.com/iAmKankan/Mathematics/blob/main/linearAlgebra.md#cosine-similarity) between one-hot vectors of any two different words is 0, one-hot vectors cannot encode similarities among words.
 
 
 * There are two most popular algorithms for finding Word Embeddings-
