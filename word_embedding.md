@@ -32,9 +32,30 @@
 * We need to process the text data into numerical tensors first. 
 * This process is also called **_text vectorization_**.
 * There are several strategies for text vectorization:
-1. _**Split text into words**_, each word is converted into a vector
-2. _**Split text into characters**_, each character is converted into a vector
-3. Extract _**n-gram**_ of words or characters n-gram to a vector
+   1. _**Split text into words**_, each word is converted into a vector
+   2. _**Split text into characters**_, each character is converted into a vector
+   3. Extract _**n-gram**_ of words or characters n-gram to a vector
+* There are two main methods for word vectorization:
+   1. One-hot Encoding
+   2. Word Embedding
+#### 1. One-hot Encoding 
+* Why is it called one-hot? 
+   * After each word is one-hot encoded, only one position has an element of 1 and the other positions are all 0.
+* **Example:**  **_"the boy is crying"_** (assuming there are only four English words in the world), after one-hot encoding,
+   * **_the_** corresponds to (1, 0, 0, 0)
+   * **_boy_** corresponds to (0, 1, 0, 0）
+   * **_is_** corresponds to (0, 0, 1, 0)
+   * **_crying_** corresponds to (0, 0, 0, 1)
+* Each word corresponds to a position in the vector, and this position represents the word.
+
+#### Avoid using One-hot Encoding 
+* This way requires a very high dimension, because if all vocabularies have **100,000** words, then each word needs to be represented by a vector of length **100,000**.
+   * **_the_** corresponds to (1, 0, 0, 0, ..., 0) (length is **100,000**)
+   * And so on, to get high-dimensional sparse tensors.
+#### Why One-Hot Vectors are bad?
+* A main reason is that one-hot word vectors cannot accurately express the similarity between different words, such as the [`cosine similarity`](https://github.com/iAmKankan/Mathematics/blob/main/linearAlgebra.md#cosine-similarity) that we often use. 
+* Since the [`cosine similarity`](https://github.com/iAmKankan/Mathematics/blob/main/linearAlgebra.md#cosine-similarity) between one-hot vectors of any two different words is 0, one-hot vectors cannot encode similarities among words.
+
 
 * There are two most popular algorithms for finding Word Embeddings-
     - **Word2vac**
