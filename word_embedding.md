@@ -42,7 +42,7 @@
     - **Word2vac**
     - **GloVe**
 
-#### 1. One-hot Encoding 
+### 1. One-hot Encoding 
 * Why is it called one-hot? 
    * After each word is one-hot encoded, only one position has an element of 1 and the other positions are all 0.
 * **Example:**  **_"the boy is crying"_** (assuming there are only four English words in the world), after one-hot encoding,
@@ -60,3 +60,31 @@
 #### Why One-Hot Vectors are bad?
 * A main reason is that one-hot word vectors cannot accurately express the similarity between different words, such as the [_cosine similarity_](https://github.com/iAmKankan/Mathematics/blob/main/linearAlgebra.md#cosine-similarity) that we often use. 
 * Since the [_cosine similarity_](https://github.com/iAmKankan/Mathematics/blob/main/linearAlgebra.md#cosine-similarity) between one-hot vectors of any two different words is 0, one-hot vectors cannot encode similarities among words.
+
+### 2. Word Embedding
+* In contrast, _Word Embedding_ embeds words into a low-dimensional dense space.
+* **Example:** the same **"the boy is crying"** sentence (assuming that there are only 4 English words in the world), after encoding, it may become:
+    * **_the_** corresponds to **_(0.1)_**
+    * **_boy_** corresponds to **_(0.14)_**
+    * **_is_** corresponds to  **_(0)_**
+    * **_crying_** corresponds to **_(0.82)_**
+
+* We assume that the embedded space is 256 dimensions (generally 256, 512 or 1024 dimensions, the larger the vocabulary, the higher the corresponding spatial dimension)
+
+**Then
+the corresponding (
+0.1,
+0.2, 0.4,
+0 , ...) (vector length is 256) boy corresponds to (0.23, 0.14, 0, 0 , ...) is corresponding to (0, 0 , 0.41, 0.9, ...) , 0.82, 0, 0.14, ...)**
+
+One-hot encoding is very simple, but the spatial dimension is high and for one-hot encoding, the distance between any two words is $$\sqrt{2}$$.
+
+ But in practice, the word **(boy) to word (man) should be very close** (because they are closely related), and **the word (cat) to word (stone) should be very far** (because they are basically unrelated).
+
+Embedding space has low dimensions and allows space to have structure .
+
+For example, the distance between the vectors can reflect gender, age, etc. (this requires training, and the unembedding layer has no structure), for example:
+
+**man-woman = boy-girl**
+
+**man-daddy = woman-mother**
