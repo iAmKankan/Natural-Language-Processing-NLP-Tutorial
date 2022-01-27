@@ -64,34 +64,26 @@
     * **_boy_** corresponds to **_(0.14)_**
     * **_is_** corresponds to  **_(0)_**
     * **_crying_** corresponds to **_(0.82)_**
-
 * We assume that the embedded space is 256 dimensions (generally 256, 512 or 1024 dimensions, the larger the vocabulary, the higher the corresponding spatial dimension)
-
 * **Then the corresponding ( 0.1, 0.2, 0.4, 0 , ...) (vector length is 256) boy corresponds to (0.23, 0.14, 0, 0 , ...) is corresponding to (0, 0 , 0.41, 0.9, ...) , 0.82, 0, 0.14, ...)**
-
 *  But in practice, the word **(boy) to word (man) should be very close** (because they are closely related), and **the word (cat) to word (stone) should be very far** (because they are basically unrelated).
-
 * Embedding space has low dimensions and allows space to have structure .
 * For example, the distance between the vectors can reflect gender, age, etc. (this requires training, and the unembedding layer has no structure), for example:
    * **man-woman = boy-girl**
    * **man-daddy = woman-mother**
-
 * There are two most popular algorithms for finding Word Embeddings-
     - **Word2vac**
     - **GloVe**
 
 ### Self-Supervised word2vec
 ![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
-* **The word2vec tool was proposed to address the issue with using One-Hot Vector.**
+* **The word2vec tool was proposed to address the issue with using _One-Hot Vector_.**
 * It maps each word to a fixed-length vector and these vectors can better express the similarity and analogy relationship among different words.
-
-> #### The word2vec tool contains two models, namely-
-   1) Skip-gram [Mikolov et al]= We predict the context words from the target
-   2) Continuous bag of words (CBOW) [Mikolov et al]= We predict the target word from the context.
-
+* The word2vec tool contains two models, namely-
+   1) _**Skip-gram**_ [_`Mikolov et al`_]= We predict the context words from the target
+   2) _**Continuous bag of words (CBOW)**_ [_`Mikolov et al`_]= We predict the target word from the context.
 * For semantically meaningful representations, their training relies on conditional probabilities that can be viewed as predicting some words using some of their surrounding words in corpora. 
-> **Since supervision comes from the data without labels, both skip-gram and continuous bag of words are self-supervised models.**
-
+* **Since supervision comes from the data without labels, both skip-gram and continuous bag of words are self-supervised models.**
 #### 1) The Skip-Gram Model
 ![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
 * **The skip-gram model assumes that a word can be used to generate its surrounding words in a text sequence.**
