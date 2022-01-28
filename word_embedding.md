@@ -1,6 +1,15 @@
 ## Index
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
-
+* [Word Embeddings](#word-embeddings)
+* [What is Word Embedding?](#what-is-word-embedding)
+* [Word Embedding properties](#word-embedding-properties)
+* [Word Embedding Mathematically Representation](#word-embedding-mathematically-representation)
+* [Word Embedding types](#word-embedding-types)
+   * [1. One-hot Encoding](#1-one-hot-encoding)
+   * [2. Word Embedding](#2-word-embedding)
+* [Self-Supervised word2vec](#self-supervised-word2vec)
+   * [1) The Skip-Gram Model](#1-the-skip-gram-model)
+   * [2) The Continuous Bag of Words (CBOW) Model](#2-the-continuous-bag-of-words-cbow-model)
 ## Word Embeddings
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
 * **_Word Embeddings_ or _Word vectorization_ is a methodology in NLP to map _words_ or _phrases from vocabulary_ to a corresponding vector of real numbers which used to find word predictions, word similarities/semantics.**
