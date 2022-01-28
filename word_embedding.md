@@ -3,7 +3,8 @@
 
 ## Word Embeddings
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
-* **Word Embeddings or Word vectorization is a methodology in NLP to map _words_ or _phrases from vocabulary_ to a corresponding vector of real numbers which used to find word predictions, word similarities/semantics.**
+* **_Word Embeddings_ or _Word vectorization_ is a methodology in NLP to map _words_ or _phrases from vocabulary_ to a corresponding vector of real numbers which used to find word predictions, word similarities/semantics.**
+<img src="https://user-images.githubusercontent.com/12748752/151629694-24298066-ce77-4eed-a32c-a7e8114aa18e.png" width=100% />
 
 ### What is Word Embedding?
 * Word embedding is just a fancy name for a [_`feature vector`_](https://ds055uzetaobb.cloudfront.net/brioche/uploads/JERsKXkW4T-screen-shot-2016-05-05-at-123118-pm.png) that represents a word.
