@@ -7,7 +7,7 @@
 * [Word Embedding types](#word-embedding-types)
    * [1. One-hot Encoding](#1-one-hot-encoding)
    * [2. Word Embedding](#2-word-embedding)
-* [Self-Supervised word2vec](#self-supervised-word2vec)
+* [Self-Supervised Word2vec](#self-supervised-word2vec)
    * [1) The Skip-Gram Model](#1-the-skip-gram-model)
    * [2) The Continuous Bag of Words (CBOW) Model](#2-the-continuous-bag-of-words-cbow-model)
 ## Word Embeddings
