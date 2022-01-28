@@ -122,3 +122,21 @@
 > <img src="https://latex.codecogs.com/svg.image?P(''loves''|''the'',''man'',''his'',''son'')" title="P(''loves''|''the'',''man'',''his'',''son'')" />
 
 ![cbow](https://user-images.githubusercontent.com/12748752/140629052-8a09da15-4be3-47fa-ab58-b87221f7e414.png)
+#### How do they work internally?
+![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
+
+<img src="https://wiki.pathmind.com/images/wiki/word2vec_diagrams.png" width=40%/>
+
+* We take _One-hot-Vector_ for each words from the sliding window at a time as a input to the neural network.
+* For CBOW our predicted value would be 'Love' in this case campared with the actual word
+* This is how we get the weight matrix
+* In Skip-gram the target word is input the y would be the context words(just opposite of CBOW)
+* 
+#### Improving the accuracy
+![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
+* Choice of Model architecture (CBOW/Skipgram)
+   * Large Corpus, higher dimensions, slower- skipgram
+   * Small Corpus, Faster - CBOW
+* Increasing the training dataset.
+* Increasing the vector dimensions
+* Increasing the windows size.
