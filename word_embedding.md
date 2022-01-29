@@ -125,7 +125,7 @@
 #### How do they work internally?
 ![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
 
-<img src="https://wiki.pathmind.com/images/wiki/word2vec_diagrams.png" width=40%/>
+<img src="https://wiki.pathmind.com/images/wiki/word2vec_diagrams.png" width=60%/>
 
 * We take _One-hot-Vector_ for each words from the sliding window at a time as a input to the neural network.
 * For CBOW our predicted value would be 'Love' in this case campared with the actual word
