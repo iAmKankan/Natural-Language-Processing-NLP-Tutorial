@@ -58,6 +58,27 @@ NLTK tool is also a best learning kit because the learning curve of Python(NLTK 
 
 <img src="https://user-images.githubusercontent.com/12748752/150872225-4f7b267c-0672-44b7-aac3-0851c029250f.png" width=100% />
 
+### Natural Language Processing and Deep Learning
+![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
+* The developments in the field of deep learning that have led to massive increases in performance in NLP.
+* Before deep learning, the main techniques used in NLP were the bag of words model and techniques like _**TF-IDF**_, _**Naive Bays**_ and **Support Vector Machine(SVM)**.
+* In fact, this is a quick, robust, simple system in today standerd.
+
+
+<img src="https://user-images.githubusercontent.com/12748752/151645347-4a15a395-af18-4870-9896-2dca31a7f07b.png" ALIGN="right" width=50% />
+
+> #### _**Before Deep Learning**_--
+* **Nowadays**, in advanced areas of NLP, we use techniques like **Hidden Markov Models** to do things like *speech recognition* and *parts of speech tagging*.
+* **Problem with Bag of Words**
+    > Consider the phrases - *dog toy* and *toy dog*
+    
+    >  These are different things, but in a Bag of Words Model ordered does not matter, and so these would be treated the same.
+* **Solution**
+    > **Neural Network**- Modeling sentences as sequences and as hierarchy(**LSTM**) has led to state of the art improvements over previous go to techniques.
+    
+    > **Word Embeddings**- These give words a neural representation so that words can be plugged into a Neural Network just like any other feature vector. 
+
+
 ## References
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
 * iNeuron.ai
