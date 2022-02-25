@@ -84,11 +84,17 @@
 * There are two most popular algorithms for finding Word Embeddings-
     - **Word2vac**
     - **GloVe**
+### What is Word2vec?
+* _**Word2Vec is a shallow, two-layer Neural Networks which is trained to reconstruct linguistic contexts of words.**_
+* It takes a large corpus of **_words_ as its input**  and produces a vector space, typically of **several hundred dimensions**, with each unique word in the corpus being assigned a corresponding vector in the space.
+* Word vectors are positioned in the vector space such that words that share common contexts in the corpus are located in close proximity to one another in the space.
+* Word2Vec is a particularly **computationally-efficient predictive model** for learning word embeddings from raw text.
 
-### Self-Supervised word2vec
+It comes in two flavors, the Continuous Bag-of-Words (CBOW) model and the Skip-Gram model.
+Algorithmically, these models are similar.
+### Self-Supervised word2vec / Word2vec
 ![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
-* **The word2vec tool was proposed to address the issue with using _One-Hot Vector_.**
-* It maps each word to a fixed-length vector and these vectors can better express the similarity and analogy relationship among different words.
+> ### _The word2vec tool was proposed to address the issue with using _One-Hot Vector_.
 * The word2vec tool contains two models, namely-
    1) _**Skip-gram**_ [_`Mikolov et al`_]= We predict the context words from the target
    2) _**Continuous bag of words (CBOW)**_ [_`Mikolov et al`_]= We predict the target word from the context.
