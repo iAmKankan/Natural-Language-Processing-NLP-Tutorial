@@ -84,6 +84,7 @@
 * There are two most popular algorithms for finding Word Embeddings-
     - **Word2vac**
     - **GloVe**
+
 ### What is Word2vec?
 * _**Word2Vec is a shallow, two-layer Neural Networks which is trained to reconstruct linguistic contexts of words.**_
 * It takes a large corpus of **_words_ as its input**  and produces a vector space, typically of **several hundred dimensions**, with each unique word in the corpus being assigned a corresponding vector in the space.
@@ -92,6 +93,10 @@
 
 It comes in two flavors, the Continuous Bag-of-Words (CBOW) model and the Skip-Gram model.
 Algorithmically, these models are similar.
+> ### _We Don't train our own Word2vec model. always use pretrained one_
+> Coz the bias term we dont knpw.
+
+* Learning Rate is very important
 ### Self-Supervised word2vec / Word2vec
 ![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
 > ### _The word2vec tool was proposed to address the issue with using _One-Hot Vector_.
@@ -100,7 +105,7 @@ Algorithmically, these models are similar.
    2) _**Continuous bag of words (CBOW)**_ [_`Mikolov et al`_]= We predict the target word from the context.
 * For semantically meaningful representations, their training relies on conditional probabilities that can be viewed as predicting some words using some of their surrounding words in corpora. 
 * **Since supervision comes from the data without labels, both skip-gram and continuous bag of words are self-supervised models.**
-#### 1) The Skip-Gram Model
+### _1) The Skip-Gram Model_
 ![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
 * **The skip-gram model assumes that a word can be used to generate its surrounding words in a text sequence.**
 > #### Take the text sequence “the”, “man”, “loves”, “his”, “son” as an example. 
@@ -118,7 +123,7 @@ Algorithmically, these models are similar.
 
 > ![skip-gram](https://user-images.githubusercontent.com/12748752/139602656-549ebe0a-e0b3-4083-84c0-fa415ac8246b.png)
 
-#### 2) The Continuous Bag of Words (CBOW) Model
+### _2) The Continuous Bag of Words (CBOW) Model_
 ![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
 * CBOW model is similar to the skip-gram model.
 *  The major difference from the skip-gram model is that the continuous bag of words model assumes that a center word is generated based on its surrounding context words in the text sequence.
@@ -127,7 +132,20 @@ Algorithmically, these models are similar.
 
 > <img src="https://latex.codecogs.com/svg.image?P(''loves''|''the'',''man'',''his'',''son'')" title="P(''loves''|''the'',''man'',''his'',''son'')" />
 
+<img src="https://user-images.githubusercontent.com/12748752/156842326-a1509f1c-8efd-4e58-8ab7-dd190231a16d.png" align="right" width=30%/>
+
 ![cbow](https://user-images.githubusercontent.com/12748752/140629052-8a09da15-4be3-47fa-ab58-b87221f7e414.png)
+
+* The "Window size" or "The token of interest" is generally 4.
+> ### Example 1:
+
+* For a sentence -“the”, “man”, “loves”, “his”, and “son”.
+* It will generate like this
+
+&rArr; <img src="http://latex.codecogs.com/svg.latex?\begin{matrix}The,&space;&&space;&space;Man,&space;&space;&&space;&space;Loves,&space;&&space;His,&space;&&space;&space;Family&space;&space;\\\downarrow&&space;\downarrow&space;&&space;\downarrow&space;&&space;\downarrow&space;&&space;&space;\\W_{t-2}&W_{t-1}&W_{t&plus;1}&W_{t&plus;2}&\end{matrix}" title="http://latex.codecogs.com/svg.latex?\begin{matrix}The, & Man, & Loves, & His, & Family \\\downarrow& \downarrow & \downarrow & \downarrow & \\W_{t-2}&W_{t-1}&W_{t+1}&W_{t+2}&\end{matrix}" align="top" />
+
+&rArr; <img src="http://latex.codecogs.com/svg.latex?W_1\rightarrow&space;Embedding&space;\rightarrow&space;[\&space;\]_{(k)}&space;\rightarrow&space;Flattening\&space;Op\rightarrow&space;Fully\&space;Connected\&space;&space;Layer\left&space;(Softmax&space;\to&space;\right&space;)&space;\begin{Bmatrix}&space;W_t\end{matrix}_{(Vocab\&space;size)}" title="http://latex.codecogs.com/svg.latex?W_1\rightarrow Embedding \rightarrow [\ \]_{(k)} \rightarrow Flattening\ Op\rightarrow Fully\ Connected\ Layer\left (Softmax \to \right ) \begin{Bmatrix} W_t\end{matrix}_{(Vocab\ size)}" align="center" />
+  
 #### How do they work internally?
 ![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
 
