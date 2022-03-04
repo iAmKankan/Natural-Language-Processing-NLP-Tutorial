@@ -164,3 +164,4 @@ Algorithmically, these models are similar.
 * Increasing the training dataset.
 * Increasing the vector dimensions
 * Increasing the windows size.
+* **Smaller dataset** is < **_30 MB_**
