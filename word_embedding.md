@@ -146,6 +146,18 @@ Algorithmically, these models are similar.
 
 &rArr; <img src="http://latex.codecogs.com/svg.latex?W_1\rightarrow&space;Embedding&space;\rightarrow&space;[\&space;\]_{(k)}&space;\rightarrow&space;Flattening\&space;Op\rightarrow&space;Fully\&space;Connected\&space;&space;Layer\left&space;(Softmax&space;\to&space;\right&space;)&space;\begin{Bmatrix}&space;W_t\end{matrix}_{(Vocab\&space;size)}" title="http://latex.codecogs.com/svg.latex?W_1\rightarrow Embedding \rightarrow [\ \]_{(k)} \rightarrow Flattening\ Op\rightarrow Fully\ Connected\ Layer\left (Softmax \to \right ) \begin{Bmatrix} W_t\end{matrix}_{(Vocab\ size)}" align="center" />
   
+<img src="http://latex.codecogs.com/svg.latex?\\W_1\rightarrow&space;Embedding&space;\rightarrow&space;[\&space;\]_{(k)}&space;\rightarrow&space;Flattening\&space;Op\rightarrow&space;Fully\&space;Connected\&space;Layer\left&space;(Softmax&space;\to&space;\right&space;)&space;\begin{Bmatrix}&space;W_t\end{matrix}_{(Vocab\&space;size)}\\{\color{Red}\underbrace{W_1\rightarrow&space;Embedding&space;\rightarrow&space;[\&space;\]_{(k)}}&space;&space;&space;}\\&space;\\{\color{Blue}&space;This\&space;section\&space;is\&space;Fixed&space;\&space;or&space;\&space;Pre-Computed&space;\&space;or&space;\&space;Weight&space;Frizer}&space;" title="http://latex.codecogs.com/svg.latex?\\W_1\rightarrow Embedding \rightarrow [\ \]_{(k)} \rightarrow Flattening\ Op\rightarrow Fully\ Connected\ Layer\left (Softmax \to \right ) \begin{Bmatrix} W_t\end{matrix}_{(Vocab\ size)}\\{\color{Red}\underbrace{W_1\rightarrow Embedding \rightarrow [\ \]_{(k)}} }\\ \\{\color{Blue} This\ section\ is\ Fixed \ or \ Pre-Computed \ or \ Weight Frizer} " />
+
+#### Improving the accuracy
+![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
+* Choice of Model architecture (CBOW/Skipgram)
+   * Large Corpus, higher dimensions, slower- skipgram
+   * Small Corpus, Faster - CBOW
+* Increasing the training dataset.
+* Increasing the vector dimensions
+* Increasing the windows size.
+* **Smaller dataset** is < **_30 MB_**
+
 #### How do they work internally?
 ![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
 
@@ -156,12 +168,4 @@ Algorithmically, these models are similar.
 * This is how we get the weight matrix
 * In Skip-gram the target word is input the y would be the context words(just opposite of CBOW)
 * 
-#### Improving the accuracy
-![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
-* Choice of Model architecture (CBOW/Skipgram)
-   * Large Corpus, higher dimensions, slower- skipgram
-   * Small Corpus, Faster - CBOW
-* Increasing the training dataset.
-* Increasing the vector dimensions
-* Increasing the windows size.
-* **Smaller dataset** is < **_30 MB_**
+
