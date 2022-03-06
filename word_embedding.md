@@ -94,7 +94,9 @@
 It comes in two flavors, the Continuous Bag-of-Words (CBOW) model and the Skip-Gram model.
 Algorithmically, these models are similar.
 > ### _We Don't train our own Word2vec model. always use pretrained one_
-> Coz the bias term we dont knpw.
+> Coz the bias terms we dont know.
+> Its very difficult to odentify the right hyperparameters.
+> Its 
 
 * Learning Rate is very important
 ### Self-Supervised word2vec / Word2vec
