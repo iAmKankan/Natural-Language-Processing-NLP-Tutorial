@@ -10,7 +10,8 @@
 * [Self-Supervised Word2vec](#self-supervised-word2vec)
    * [1) The Skip-Gram Model](#1-the-skip-gram-model)
    * [2) The Continuous Bag of Words (CBOW) Model](#2-the-continuous-bag-of-words-cbow-model)
-## Word Embeddings
+
+## Word Embeddings or Word vectorization
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
 * **_Word Embeddings_ or _Word vectorization_ is a methodology in NLP to map _words_ or _phrases from vocabulary_ to a corresponding vector of real numbers which used to find word predictions, word similarities/semantics.**
 <img src="https://user-images.githubusercontent.com/12748752/151629694-24298066-ce77-4eed-a32c-a7e8114aa18e.png" width=100% />
@@ -25,9 +26,13 @@
 * The process of converting words into numbers are called **Vectorization**.
 * This is one of the most important advances in Deep NLP research.
 * Word Emeddings allow you to map words into a vector space.
-* **Once you can represent something as a vector, you can perform arithmetic on it.** So, this is where the famous **_king - man = queen - woman_**, **_December - Novemeber = July - June_** or **_France - Paris = England - London_** come from.
+* **Once you can represent something as a vector, you can perform arithmetic on it.**
+* So, this is where the famous phrases come from.
+   * **_king - man = queen - woman_**, 
+   * **_December - Novemeber = July - June_** or
+   * **_France - Paris = England - London_** 
 
-### Word Embedding Mathematically Representation
+### Mathematically Representation
 * **Embedding mathematically represents a mapping , <a>f: X &rarr; Y,</a> which is a function**. 
 * Where the function is -
     * **injective** (which is what we call an **injective function** , each Y has a unique X correspondence, and vice versa)
@@ -36,7 +41,7 @@
 * _**So for word embedding, the word word is mapped to another space, where this mapping has the characteristics of injective and structure-preserving.**_
 
 
-### Word Embedding types
+### Word Vectorization or Word Embeddings types
 * The neural network cannot train the original text data. 
 * We need to process the text data into numerical tensors first. 
 * This process is also called **_text vectorization_**.
@@ -45,10 +50,11 @@
    2. _**Split text into characters**_, each character is converted into a vector
    3. Extract _**n-gram**_ of words or characters n-gram to a vector
 * There are two main methods for word vectorization:
-   1. One-hot Encoding
-   2. Word Embedding
+   1. **_One-hot Encoding_**
+   2. **_Word Embedding_**
 
-### 1. One-hot Encoding 
+## 1. _One-hot Encoding_ 
+![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
 * Why is it called one-hot? 
    * After each word is one-hot encoded, only one position has an element of 1 and the other positions are all 0.
 * **Example:**  **_"the boy is crying"_** (assuming there are only four English words in the world), after one-hot encoding,
@@ -58,16 +64,17 @@
    * **_crying_** corresponds to (0, 0, 0, 1)
 * Each word corresponds to a position in the vector, and this position represents the word.
 
-#### Avoid using One-hot Encoding 
+### Avoid using One-hot Encoding 
 * This way requires a very high dimension, because if all vocabularies have **100,000** words, then each word needs to be represented by a vector of length **100,000**.
    * **_the_** corresponds to (1, 0, 0, 0, ..., 0) (length is **100,000**)
    * And so on, to get high-dimensional sparse tensors.
 
-#### Why One-Hot Vectors are bad?
+### Why One-Hot Vectors are bad?
 * A main reason is that one-hot word vectors cannot accurately express the similarity between different words, such as the [_cosine similarity_](https://github.com/iAmKankan/Mathematics/blob/main/linearAlgebra.md#cosine-similarity) that we often use. 
 * Since the [_cosine similarity_](https://github.com/iAmKankan/Mathematics/blob/main/linearAlgebra.md#cosine-similarity) between one-hot vectors of any two different words is 0, one-hot vectors cannot encode similarities among words.
 
-### 2. Word Embedding
+## 2. _Word Embedding_
+![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
 * In contrast, _Word Embedding_ embeds words into a low-dimensional dense space.
 * **Example:** the same **"the boy is crying"** sentence (assuming that there are only 4 English words in the world), after encoding, it may become:
     * **_the_** corresponds to **_(0.1)_**
@@ -82,10 +89,11 @@
    * **man-woman = boy-girl**
    * **man-daddy = woman-mother**
 * There are two most popular algorithms for finding Word Embeddings-
-    - **Word2vac**
-    - **GloVe**
+    - **_Word2vac_**
+    - **_GloVe_**
+> ### _The word2vec_ tool was proposed to address the issue with using _One-Hot Vector_.
 
-### What is Word2vec?
+### _Word2vec_
 * _**Word2Vec is a shallow, two-layer Neural Networks which is trained to reconstruct linguistic contexts of words.**_
 * It takes a large corpus of **_words_ as its input**  and produces a vector space, typically of **several hundred dimensions**, with each unique word in the corpus being assigned a corresponding vector in the space.
 * Word vectors are positioned in the vector space such that words that share common contexts in the corpus are located in close proximity to one another in the space.
@@ -99,14 +107,14 @@ Algorithmically, these models are similar.
 > Its 
 
 * Learning Rate is very important
-### Self-Supervised word2vec / Word2vec
-![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
-> ### _The word2vec tool was proposed to address the issue with using _One-Hot Vector_.
+
 * The word2vec tool contains two models, namely-
    1) _**Skip-gram**_ [_`Mikolov et al`_]= We predict the context words from the target
    2) _**Continuous bag of words (CBOW)**_ [_`Mikolov et al`_]= We predict the target word from the context.
 * For semantically meaningful representations, their training relies on conditional probabilities that can be viewed as predicting some words using some of their surrounding words in corpora. 
-* **Since supervision comes from the data without labels, both skip-gram and continuous bag of words are self-supervised models.**
+> #### _Word2vec is a Self-Supervised learning_
+> Since supervision comes from the data without labels, both skip-gram and continuous bag of words are self-supervised models.
+
 ### _1) The Skip-Gram Model_
 ![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
 * **The skip-gram model assumes that a word can be used to generate its surrounding words in a text sequence.**
@@ -169,5 +177,4 @@ Algorithmically, these models are similar.
 * For CBOW our predicted value would be 'Love' in this case campared with the actual word
 * This is how we get the weight matrix
 * In Skip-gram the target word is input the y would be the context words(just opposite of CBOW)
-* 
 
