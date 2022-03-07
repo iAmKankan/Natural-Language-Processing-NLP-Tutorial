@@ -75,6 +75,8 @@
 
 ## 2. _Word Embedding_
 ![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
+
+> #### _The word2vec_ tool was proposed to address the issue with using _One-Hot Vector_.
 * In contrast, _Word Embedding_ embeds words into a low-dimensional dense space.
 * **Example:** the same **"the boy is crying"** sentence (assuming that there are only 4 English words in the world), after encoding, it may become:
     * **_the_** corresponds to **_(0.1)_**
@@ -91,23 +93,20 @@
 * There are two most popular algorithms for finding Word Embeddings-
     1) **_Word2vac_**
     2) **_GloVe_**
-> ### _The word2vec_ tool was proposed to address the issue with using _One-Hot Vector_.
 
 ### _Word2vec_
 * _**Word2Vec is a shallow, two-layer Neural Networks which is trained to reconstruct linguistic contexts of words.**_
 * It takes a large corpus of **_words_ as its input**  and produces a vector space, typically of **several hundred dimensions**, with each unique word in the corpus being assigned a corresponding vector in the space.
 * Word vectors are positioned in the vector space such that words that share common contexts in the corpus are located in close proximity to one another in the space.
 * Word2Vec is a particularly **computationally-efficient predictive model** for learning word embeddings from raw text.
+* It comes in two flavors, the Continuous Bag-of-Words (CBOW) model and the Skip-Gram model.
+* Algorithmically, these models are similar.
 
-It comes in two flavors, the Continuous Bag-of-Words (CBOW) model and the Skip-Gram model.
-Algorithmically, these models are similar.
 > ### _We Don't train our own Word2vec model. always use pretrained one_
 > Coz the bias terms we dont know.
 > Its very difficult to odentify the right hyperparameters.
 > Its 
-
 * Learning Rate is very important
-
 * The word2vec tool contains two models, namely-
    1) _**Skip-gram**_ [_`Mikolov et al`_]= We predict the context words from the target
    2) _**Continuous bag of words (CBOW)**_ [_`Mikolov et al`_]= We predict the target word from the context.
@@ -116,7 +115,6 @@ Algorithmically, these models are similar.
 > Since supervision comes from the data without labels, both skip-gram and continuous bag of words are self-supervised models.
 
 ### _1) The Skip-Gram Model_
-![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
 * **The skip-gram model assumes that a word can be used to generate its surrounding words in a text sequence.**
 > #### Take the text sequence “the”, “man”, “loves”, “his”, “son” as an example. 
 > * Let us choose “loves” as the center word and set the context window size to 2. 
@@ -134,7 +132,7 @@ Algorithmically, these models are similar.
 > ![skip-gram](https://user-images.githubusercontent.com/12748752/139602656-549ebe0a-e0b3-4083-84c0-fa415ac8246b.png)
 
 ### _2) The Continuous Bag of Words (CBOW) Model_
-![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
+
 * CBOW model is similar to the skip-gram model.
 *  The major difference from the skip-gram model is that the continuous bag of words model assumes that a center word is generated based on its surrounding context words in the text sequence.
 *   For example, in the same text sequence “the”, “man”, “loves”, “his”, and “son”, with “loves” as the center word and the context window size being 2,
