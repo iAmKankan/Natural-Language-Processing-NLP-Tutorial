@@ -7,9 +7,10 @@
 * [Word Vectorization or Word Embeddings types](#word-vectorization-or-word-embeddings-types)
    * [1. One-hot Encoding](#1-one-hot-encoding)
    * [2. Word Embedding](#2-word-embedding)
-* [Word2vec](#word2vec)
-   * [1) The Skip-Gram Model](#1-the-skip-gram-model)
-   * [2) The Continuous Bag of Words (CBOW) Model](#2-the-continuous-bag-of-words-cbow-model)
+     * [Word2vec](#word2vec)
+         * [1) The Skip-Gram Model](#1-the-skip-gram-model)
+         * [2) The Continuous Bag of Words (CBOW) Model](#2-the-continuous-bag-of-words-cbow-model)
+     * Glove
 
 ## Word Embeddings or Word vectorization
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
@@ -168,9 +169,7 @@
 
 #### How do they work internally?
 ![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
-
 <img src="https://wiki.pathmind.com/images/wiki/word2vec_diagrams.png" width=60%/>
-
 * We take _One-hot-Vector_ for each words from the sliding window at a time as a input to the neural network.
 * For CBOW our predicted value would be 'Love' in this case campared with the actual word
 * This is how we get the weight matrix
