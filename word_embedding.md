@@ -1,13 +1,13 @@
 ## Index
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
-* [Word Embeddings](#word-embeddings)
+* [Word Embeddings or Word vectorization](#word-embeddings-or-word-vectorization)
 * [What is Word Embedding?](#what-is-word-embedding)
 * [Word Embedding properties](#word-embedding-properties)
-* [Word Embedding Mathematically Representation](#word-embedding-mathematically-representation)
-* [Word Embedding types](#word-embedding-types)
+* [Mathematically Representation](#mathematically-representation)
+* [Word Vectorization or Word Embeddings types](#word-vectorization-or-word-embeddings-types)
    * [1. One-hot Encoding](#1-one-hot-encoding)
    * [2. Word Embedding](#2-word-embedding)
-* [Self-Supervised Word2vec](#self-supervised-word2vec)
+* [Word2vec](#word2vec)
    * [1) The Skip-Gram Model](#1-the-skip-gram-model)
    * [2) The Continuous Bag of Words (CBOW) Model](#2-the-continuous-bag-of-words-cbow-model)
 
@@ -94,7 +94,7 @@
     1) **_Word2vac_**
     2) **_GloVe_**
 
-### _Word2vec_
+## _Word2vec_
 * _**Word2Vec is a shallow, two-layer Neural Networks which is trained to reconstruct linguistic contexts of words.**_
 * It takes a large corpus of **_words_ as its input**  and produces a vector space, typically of **several hundred dimensions**, with each unique word in the corpus being assigned a corresponding vector in the space.
 * Word vectors are positioned in the vector space such that words that share common contexts in the corpus are located in close proximity to one another in the space.
