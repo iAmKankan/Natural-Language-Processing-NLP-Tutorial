@@ -46,9 +46,9 @@
 * We need to process the text data into numerical tensors first. 
 * This process is also called **_text vectorization_**.
 * There are several strategies for text vectorization:
-   1. _**Split text into words**_, each word is converted into a vector
-   2. _**Split text into characters**_, each character is converted into a vector
-   3. Extract _**n-gram**_ of words or characters n-gram to a vector
+   * _**Split text into words**_, each word is converted into a vector
+   * _**Split text into characters**_, each character is converted into a vector
+   * Extract _**n-gram**_ of words or characters n-gram to a vector
 * There are two main methods for word vectorization:
    1. **_One-hot Encoding_**
    2. **_Word Embedding_**
@@ -89,8 +89,8 @@
    * **man-woman = boy-girl**
    * **man-daddy = woman-mother**
 * There are two most popular algorithms for finding Word Embeddings-
-    - **_Word2vac_**
-    - **_GloVe_**
+    1) **_Word2vac_**
+    2) **_GloVe_**
 > ### _The word2vec_ tool was proposed to address the issue with using _One-Hot Vector_.
 
 ### _Word2vec_
