@@ -96,6 +96,7 @@
     2) **_GloVe_**
 
 ## _Word2vec_
+![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
 * _**Word2Vec is a shallow, two-layer Neural Networks which is trained to reconstruct linguistic contexts of words.**_
 * It takes a large corpus of **_words_ as its input**  and produces a vector space, typically of **several hundred dimensions**, with each unique word in the corpus being assigned a corresponding vector in the space.
 * Word vectors are positioned in the vector space such that words that share common contexts in the corpus are located in close proximity to one another in the space.
@@ -133,7 +134,6 @@
 > ![skip-gram](https://user-images.githubusercontent.com/12748752/139602656-549ebe0a-e0b3-4083-84c0-fa415ac8246b.png)
 
 ### _2) The Continuous Bag of Words (CBOW) Model_
-
 * CBOW model is similar to the skip-gram model.
 *  The major difference from the skip-gram model is that the continuous bag of words model assumes that a center word is generated based on its surrounding context words in the text sequence.
 *   For example, in the same text sequence “the”, “man”, “loves”, “his”, and “son”, with “loves” as the center word and the context window size being 2,
@@ -158,7 +158,6 @@
 <img src="http://latex.codecogs.com/svg.latex?\\W_1\rightarrow&space;Embedding&space;\rightarrow&space;[\&space;\]_{(k)}&space;\rightarrow&space;Flattening\&space;Op\rightarrow&space;Fully\&space;Connected\&space;Layer\left&space;(Softmax&space;\to&space;\right&space;)&space;\begin{Bmatrix}&space;W_t\end{matrix}_{(Vocab\&space;size)}\\{\color{Red}\underbrace{W_1\rightarrow&space;Embedding&space;\rightarrow&space;[\&space;\]_{(k)}}&space;&space;&space;}\\&space;\\{\color{Blue}&space;This\&space;section\&space;is\&space;Fixed&space;\&space;or&space;\&space;Pre-Computed&space;\&space;or&space;\&space;Weight&space;Frizer}&space;" title="http://latex.codecogs.com/svg.latex?\\W_1\rightarrow Embedding \rightarrow [\ \]_{(k)} \rightarrow Flattening\ Op\rightarrow Fully\ Connected\ Layer\left (Softmax \to \right ) \begin{Bmatrix} W_t\end{matrix}_{(Vocab\ size)}\\{\color{Red}\underbrace{W_1\rightarrow Embedding \rightarrow [\ \]_{(k)}} }\\ \\{\color{Blue} This\ section\ is\ Fixed \ or \ Pre-Computed \ or \ Weight Frizer} " />
 
 #### Improving the accuracy
-![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
 * Choice of Model architecture (CBOW/Skipgram)
    * Large Corpus, higher dimensions, slower- skipgram
    * Small Corpus, Faster - CBOW
@@ -168,10 +167,16 @@
 * **Smaller dataset** is < **_30 MB_**
 
 #### How do they work internally?
-![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
 <img src="https://wiki.pathmind.com/images/wiki/word2vec_diagrams.png" width=60%/>
 * We take _One-hot-Vector_ for each words from the sliding window at a time as a input to the neural network.
 * For CBOW our predicted value would be 'Love' in this case campared with the actual word
 * This is how we get the weight matrix
 * In Skip-gram the target word is input the y would be the context words(just opposite of CBOW)
+### Word2vec Archetecture
+
+
+
+
+## _GloVe_
+![light](https://user-images.githubusercontent.com/12748752/134754235-ae8efaf0-a27a-46f0-b439-b114cbb8cf3e.png)
 
