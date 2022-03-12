@@ -174,6 +174,25 @@
 * In Skip-gram the target word is input the y would be the context words(just opposite of CBOW)
 ### Word2vec Archetecture
 
+### _Negative sampling_
+![light](https://user-images.githubusercontent.com/12748752/141935760-406edb8f-cb9b-4e30-9b69-9153b52c28b4.png)
+* Negative sampling reduces computation by sampling just **N** negative instances along with the target word instead of sampling the whole vocabulary.
+* Technically, negative sampling ignores most of the ‘0’ in the one-hot label word vector, and only propagates and updates the weights for the target and a few negative classes which were randomly sampled.
+* More concretely, negative sampling samples negative instances(words) along with the target word and minimizes the log-likelihood of the sampled negative instances while maximizing the log-likelihood of the target word.
+> ##### Samples very near to 0 is treated as negative (-ve) and samples are very far from 0 is treated as positive(+ve).
+<img src="https://user-images.githubusercontent.com/12748752/157604235-9119cfe7-eb3f-48dd-bb0c-fcf03283af6a.png" width=50% />
+#### How the negative samples are chosen?
+* The negative samples are chosen using a unigram distribution.
+* Essentially, the probability for selecting a word as a negative sample is related to its frequency, with more frequent words being more likely to be selected as negative samples.
+* Specifically, each word is given a weight equal to it’s frequency (word count) raised to the 3/4 power. The probability for a selecting a word is just it’s weight divided by the sum of weights for all words.
+
+#### Sub-sampling <img src="https://latex.codecogs.com/svg.image?{\color{Red}&space;\textbf{Depricated}}" align="center">
+Some frequent words often provide little information. Words with frequency above a certain threshold (e.g ‘a’, ‘an’ and ‘that’) may be subsampled to increase training speed and performance. Also, common word pairs or phrases may be treated as single “words” to increase training speed.
+
+#### Context window
+* The size of the context window determines how many words before and after a given word would be included as context words of the given word. According to the authors’ note, the recommended value is 10 for skip-gram and 5 for CBOW.
+* Here is an example of Skip-Gram with context window of size 2:
+<img src="https://user-images.githubusercontent.com/12748752/157604214-1127794b-9dc7-40cf-8249-f2e453441d05.png" width=50% />
 
 
 
