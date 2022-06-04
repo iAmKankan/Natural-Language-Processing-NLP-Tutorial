@@ -3,6 +3,19 @@
 * [Natural Language Processing (NLP)](#natural-language-processing-nlp)
 * [Why learn NLP?](#why-learn-nlp)
 * [Word Embeddings(Word2vec)](https://github.com/iAmKankan/Natural-Language-Processing-NLP-Tutorial/blob/master/word_embedding.md)
+  * [Word Embeddings or Word vectorization](#word-embeddings-or-word-vectorization)
+  * [What is Word Embedding?](#what-is-word-embedding)
+  * [Word Embedding properties](#word-embedding-properties)
+  * [Mathematically Representation](#mathematically-representation)
+  * [Word Vectorization or Word Embeddings types](#word-vectorization-or-word-embeddings-types)
+    * [1. One-hot Encoding](#1-one-hot-encoding)
+    * [2. Word Embedding](#2-word-embedding)
+       * [Word2vec](#word2vec)
+          * [1) The Skip-Gram Model](#1-the-skip-gram-model)
+          * [2) The Continuous Bag of Words (CBOW) Model](#2-the-continuous-bag-of-words-cbow-model)
+        * Glove
+
+
 * [References](#references)
 ## Natural Language Processing (NLP)
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
