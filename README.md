@@ -17,7 +17,7 @@
 * [References](#references)
 ## Natural Language Processing (NLP)
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
-* _**Natural language processing**_ is a subset of Artificial intelligence that helps computers to understand, interpret, and utilize the human languages. 
+#### _**Natural language processing**_ is a subset of Artificial intelligence that helps computers to understand, interpret, and utilize the human languages. 
 <img src="https://user-images.githubusercontent.com/12748752/150695497-d66d6dae-37e6-48d4-8144-a7b8473435c9.png" ALIGN="right" width=50% />
 
 * NLP allows computers to communicate with peoples using human languages. 
