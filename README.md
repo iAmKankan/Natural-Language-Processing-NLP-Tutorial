@@ -1,12 +1,13 @@
 ## Index
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
-#### _NLP(Natural language processing)_
+### _NLP(Natural language processing)_
  * [What is NLP?](#natural-language-processing-nlp)
  * [Why we learn NLP?](#why-learn-nlp)
  * [General NLP tasks](#typical-nlp-tasks)
  * [Why NLP is so hard](#why-it-is-hard)
+ * [Main NLP Approaches](#main-approaches-of-nlp)
  * [NLP Roadmap](#nlp-roadmap)
-#### _NLP and Probability_
+### _NLP and Probability_
  * [_Why we need _Probability_ in NLP_?](https://github.com/iAmKankan/Mathematics/blob/main/probability/README.md)
 
 ### [_Word Embeddings(Word2vec)_](https://github.com/iAmKankan/Natural-Language-Processing-NLP-Tutorial/blob/master/word_embedding.md)
