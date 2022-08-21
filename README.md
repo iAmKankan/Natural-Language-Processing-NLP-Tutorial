@@ -100,15 +100,13 @@ NLTK tool is also a best learning kit because the learning curve of Python(NLTK 
 * Idioms, metaphors, sarcasm (Yeah! right), double negatives, etc. make it difficult for automatic processing
 * Human language interpretation depends on real world, common sense, and contextual knowledge
 ## Typical NLP tasks
-
-
-| $\large{\color{Purple}\textrm{Information Retrieval}}$ | $\large{\color{Purple}\textrm{Find documents based on keywords}}$                                                                    |
+| ${\color{Purple}\textrm{Information Retrieval}}$ | ${\color{Purple}\textrm{Find documents based on keywords}}$                                                                    |
 |:------------------------|:-------------------------------------------------------------------------------------------------------|
-| $\large{\color{Purple}\textrm{Information Extraction}}$   |$\large{\color{Purple}\textrm{ Identify and extract personal name, date, company name, city..}}$                                        |
-| $\large{\color{Purple}\textrm{Language generation}}$      |$\large{\color{Purple}\textrm{ Description based on a photograph, Title for a photograph}}$                                             |
-| $\large{\color{Purple}\textrm{Text classification}}$      |$\large{\color{Purple}\textrm{ Assigning predefined categorization to documents. Identify Spam emails and move them to a Spam folder}}$ |
-| $\large{\color{Purple}\textrm{Machine Translation}}$      |$\large{\color{Purple}\textrm{ Translate any language Text to another}}$                                                                |
-| $\large{\color{Purple}\textrm{Grammar checkers}}$         |$\large{\color{Purple}\textrm{ Check the grammar for any language}}$                                                                    |
+| ${\color{Purple}\textrm{Information Extraction}}$   |${\color{Purple}\textrm{ Identify and extract personal name, date, company name, city..}}$                                        |
+| ${\color{Purple}\textrm{Language generation}}$      |${\color{Purple}\textrm{ Description based on a photograph, Title for a photograph}}$                                             |
+| ${\color{Purple}\textrm{Text classification}}$      |${\color{Purple}\textrm{ Assigning predefined categorization to documents. Identify Spam emails and move them to a Spam folder}}$ |
+| ${\color{Purple}\textrm{Machine Translation}}$      |${\color{Purple}\textrm{ Translate any language Text to another}}$                                                                |
+| ${\color{Purple}\textrm{Grammar checkers}}$         |${\color{Purple}\textrm{ Check the grammar for any language}}$ 
 
 
 ## References
