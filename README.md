@@ -39,15 +39,18 @@
   - **Document Summarization:** Automatically creates a synopsis, condensing large amounts of text.
   - **Machine Translation:** Translates the text or speech of one language into another language.
 
+## Typical NLP tasks
+| ${\color{Purple}\textrm{Information Retrieval}}$ | ${\color{Purple}\textrm{Find documents based on keywords}}$                                                                    |
+|:------------------------|:-------------------------------------------------------------------------------------------------------|
+| ${\color{Purple}\textrm{Information Extraction}}$   |${\color{Purple}\textrm{ Identify and extract personal name, date, company name, city..}}$                                        |
+| ${\color{Purple}\textrm{Language generation}}$      |${\color{Purple}\textrm{ Description based on a photograph, Title for a photograph}}$                                             |
+| ${\color{Purple}\textrm{Text classification}}$      |${\color{Purple}\textrm{ Assigning predefined categorization to documents. Identify Spam emails and move them to a Spam folder}}$ |
+| ${\color{Purple}\textrm{Machine Translation}}$      |${\color{Purple}\textrm{ Translate any language Text to another}}$                                                                |
+| ${\color{Purple}\textrm{Grammar checkers}}$         |${\color{Purple}\textrm{ Check the grammar for any language}}$ 
+
 ### Why learn NLP?
 ![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
-* We are in the age of information, we can't even imagine our life without *Google*. 
-* We use basic stuffs with Alexa and Siri and we are habitual with these two.
-* We use spam filters for filtering spam emails.
-* We need spell checker on our Word documents. 
-* There were many more examples of real world NLP applications around us.
-
-Let me give you some example like they are built with the use of NLP but we are not aware of it:
+#### Some example like they are built with the use of NLP :
 
    1. Spell Correction(MS Word/any other editor)
    2. Search engines(Google, Bing, Yahoo)
@@ -56,21 +59,18 @@ Let me give you some example like they are built with the use of NLP but we are 
    5. News feeds(Google, Yahoo!, and so on)
    6. Machine Translation(Google translation)
    7. IBM Watson
-<p>   
-Building these above applications we need a required, very specific skill set with a great understanding of language and tools to process the language efficiently. So, it's not just hype that makes NLP one of the most niche areas, but it's the kind of application that can be created using NLP(Natural Language Processing) that makes it one of the most unique skills to have.</p><p>
-To achieve one of the above applications and other basic NLP preprocessing, there are many open source tools available. Some of them which are made by organizations to build their own NLP applications, while some of the organizations have open-sourced. Here are the small list of NLP tools are available:
-</p>
 
-   - GATE
-   - Mallet
-   - Open NLP
-   - UIMA
-   - Standford toolkit
-   - Gensim
-   - **NLTK(Natural Language Tool kit)**
-<p>   
-Most of the tools are written in Java and have similar functionalities.And Some of them are robust and have a different variety of NLP tools are avaialable. However, when it comes to ease to use and explaination of the concepts, NLTK scores really high.</p><p>
-NLTK tool is also a best learning kit because the learning curve of Python(NLTK is written on this) is very fast. NLTK incorporated most of the NLP tasks, it's too elegant and easy to work with. For all these kind of reasons, NLTK became one of the popular libraries in the NLP community.</p>
+#### Some NLP tools
+Most of the tools are written in Java and have similar functionalities. **GATE**, **Mallet**, **Open NLP**, **UIMA**, **Standford toolkit**, **Gensim**, **NLTK(Natural Language Tool kit)**.
+
+## Why it is Hard?
+* Multiple ways of representation of the same scenario
+* Includes common sense and contextual representation
+* Complex representation information (simple to hard vocabulary)
+* Mixing of visual cues
+* Ambiguous in nature
+* Idioms, metaphors, sarcasm (Yeah! right), double negatives, etc. make it difficult for automatic processing
+* Human language interpretation depends on real world, common sense, and contextual knowledge
 
 ### NLP Roadmap
 ![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
@@ -98,23 +98,6 @@ NLTK tool is also a best learning kit because the learning curve of Python(NLTK 
 > #### **Solution**
    * **Neural Network**- Modeling sentences as sequences and as hierarchy(**_LSTM_**) has led to state of the art improvements over previous go to techniques.
    * **Word Embeddings**- These give words a neural representation so that words can be plugged into a Neural Network just like any other feature vector. 
-
-## Why it is Hard?
-* Multiple ways of representation of the same scenario
-* Includes common sense and contextual representation
-* Complex representation information (simple to hard vocabulary)
-* Mixing of visual cues
-* Ambiguous in nature
-* Idioms, metaphors, sarcasm (Yeah! right), double negatives, etc. make it difficult for automatic processing
-* Human language interpretation depends on real world, common sense, and contextual knowledge
-## Typical NLP tasks
-| ${\color{Purple}\textrm{Information Retrieval}}$ | ${\color{Purple}\textrm{Find documents based on keywords}}$                                                                    |
-|:------------------------|:-------------------------------------------------------------------------------------------------------|
-| ${\color{Purple}\textrm{Information Extraction}}$   |${\color{Purple}\textrm{ Identify and extract personal name, date, company name, city..}}$                                        |
-| ${\color{Purple}\textrm{Language generation}}$      |${\color{Purple}\textrm{ Description based on a photograph, Title for a photograph}}$                                             |
-| ${\color{Purple}\textrm{Text classification}}$      |${\color{Purple}\textrm{ Assigning predefined categorization to documents. Identify Spam emails and move them to a Spam folder}}$ |
-| ${\color{Purple}\textrm{Machine Translation}}$      |${\color{Purple}\textrm{ Translate any language Text to another}}$                                                                |
-| ${\color{Purple}\textrm{Grammar checkers}}$         |${\color{Purple}\textrm{ Check the grammar for any language}}$ 
 
 
 ## References
