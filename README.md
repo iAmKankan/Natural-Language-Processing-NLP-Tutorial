@@ -91,6 +91,27 @@ NLTK tool is also a best learning kit because the learning curve of Python(NLTK 
    * **Neural Network**- Modeling sentences as sequences and as hierarchy(**_LSTM_**) has led to state of the art improvements over previous go to techniques.
    * **Word Embeddings**- These give words a neural representation so that words can be plugged into a Neural Network just like any other feature vector. 
 
+## Why it is Hard?
+* Multiple ways of representation of the same scenario
+* Includes common sense and contextual representation
+* Complex representation information (simple to hard vocabulary)
+* Mixing of visual cues
+* Ambiguous in nature
+* Idioms, metaphors, sarcasm (Yeah! right), double negatives, etc. make it difficult for automatic processing
+* Human language interpretation depends on real world, common sense, and contextual knowledge
+## Typical NLP tasks
+$$
+\begin{matrix}
+Information Retrieval & Find documents based on keywords \\
+Information Extraction &  Identify and extract personal name, date, company name, city..\\
+Language generation & Description based on a photograph, Title for a photograph \\
+Text classification & Assigning predefined categorization to documents. Identify Spam emails and move them to a Spam folder\\
+Machine Translation & Translate any language Text to another \\
+Grammar checkers & Check the grammar for any language \\
+\end{matrix}
+$$
+
+
 ## References
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
 
