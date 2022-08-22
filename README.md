@@ -40,6 +40,7 @@
   - **Machine Translation:** Translates the text or speech of one language into another language.
 
 ## Typical NLP tasks
+![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
 | ${\color{Purple}\textrm{Information Retrieval}}$ | ${\color{Purple}\textrm{Find documents based on keywords}}$                                                                    |
 |:------------------------|:-------------------------------------------------------------------------------------------------------|
 | ${\color{Purple}\textrm{Information Extraction}}$   |${\color{Purple}\textrm{ Identify and extract personal name, date, company name, city..}}$                                        |
@@ -64,6 +65,7 @@
 Most of the tools are written in Java and have similar functionalities. **GATE**, **Mallet**, **Open NLP**, **UIMA**, **Standford toolkit**, **Gensim**, **NLTK(Natural Language Tool kit)**.
 
 ## Why it is Hard?
+![light](https://user-images.githubusercontent.com/12748752/150695340-c086876c-1e29-4493-b03b-cbff51dba02a.png)
 * Multiple ways of representation of the same scenario
 * Includes common sense and contextual representation
 * Complex representation information (simple to hard vocabulary)
@@ -99,6 +101,18 @@ Most of the tools are written in Java and have similar functionalities. **GATE**
    * **Neural Network**- Modeling sentences as sequences and as hierarchy(**_LSTM_**) has led to state of the art improvements over previous go to techniques.
    * **Word Embeddings**- These give words a neural representation so that words can be plugged into a Neural Network just like any other feature vector. 
 
+### Sequence Learning
+![plum](https://user-images.githubusercontent.com/12748752/126882596-b9ba4645-7001-435e-9a3c-d4416a2543c1.png)
+Sequence learning is the study of machine learning algorithms designed for applications that require **sequential data** or **temporal data**.
+#### RECURRENT NEURAL NETWORK
+* Sequential data prediction is considered as a key problem in machine learning and artificial intelligence
+* Unlike images where we look at the entire image, we read **text documents sequentially** to understand the content. 
+* The likelihood of any sentence can be determined from everyday use of language.
+* The earlier sequence of words (int time) is important to predict the next word, sentence, paragraph or chapter.
+* If a word occurs twice in a sentence, but could not be accommodated in the sliding window, then the word is learned twice
+* An architecture that does not impose a fixed-length limit on the prior context
+
+**RNN-Language Model**-_Encoding a sentence into a fixed sized vector_-Exploding and vanishing gradients-LSTM-GRU
 
 ## References
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
