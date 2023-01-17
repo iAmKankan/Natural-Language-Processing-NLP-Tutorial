@@ -12,7 +12,8 @@
  
 ### [Text Preprocessing Level 1- Stopwords, Tokens, Stemming, Lammetization](https://github.com/iAmKankan/NaturalLanguageProcessing-NLP/tree/master/Text%20Preprocessing%20Level%23%201)
 ### [Text Preprocessing Level 2- Bag Of Words, TFIDF, Unigrams, Bigram](https://github.com/iAmKankan/NaturalLanguageProcessing-NLP/tree/master/Text%20Preprocessing%20Level%23%202)
-### [Text Preprocessing Level 3- _Word Embeddings(Word2vec, One-hot, The Skip-Gram Mode, CBOW, GLOVE)_](https://github.com/iAmKankan/Natural-Language-Processing-NLP-
+### [Text Preprocessing Level 3- _Word Embeddings(Word2vec, One-hot, The Skip-Gram Mode, CBOW, GLOVE)_](https://github.com/iAmKankan/Natural-Language-Processing-NLP-Tutorial/blob/master/word_embedding.md)
+
 ### [_References_](#references-1)
 ## Natural Language Processing (NLP)
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
