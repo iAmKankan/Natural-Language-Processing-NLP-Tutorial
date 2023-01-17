@@ -10,24 +10,9 @@
 ### _NLP and Probability_
  * [_Why we need _Probability_ in NLP_?](https://github.com/iAmKankan/Mathematics/blob/main/probability/README.md)
  
-### [Text Preprocessing Level 1](https://github.com/iAmKankan/NaturalLanguageProcessing-NLP/tree/master/Text%20Preprocessing%20Level%23%201)
-  * [Stopwords](https://nbviewer.org/github/iAmKankan/NaturalLanguageProcessing-NLP/blob/master/NLP-Python/00_stopwords.ipynb)
-  * [Tokens](https://nbviewer.org/github/iAmKankan/NaturalLanguageProcessing-NLP/blob/master/NLP-Python/01_tokens.ipynb)
-  * [Stemming](https://nbviewer.org/github/iAmKankan/NaturalLanguageProcessing-NLP/blob/master/NLP-Python/02_stemming.ipynb)
-  * [Lammetization](https://nbviewer.org/github/iAmKankan/NaturalLanguageProcessing-NLP/blob/master/NLP-Python/03_lemmatization.ipynb)
+### [Text Preprocessing Level 1- Stopwords, Tokens, Stemming, Lammetization](https://github.com/iAmKankan/NaturalLanguageProcessing-NLP/tree/master/Text%20Preprocessing%20Level%23%201)
 ### [Text Preprocessing Level 2- Bag Of Words, TFIDF, Unigrams, Bigram](https://github.com/iAmKankan/NaturalLanguageProcessing-NLP/tree/master/Text%20Preprocessing%20Level%23%202)
-### [Text Preprocessing Level 3- _Word Embeddings(Word2vec)_](https://github.com/iAmKankan/Natural-Language-Processing-NLP-Tutorial/blob/master/word_embedding.md)
-  * [Word Embeddings or Word vectorization](#word-embeddings-or-word-vectorization)
-  * [What is Word Embedding?](#what-is-word-embedding)
-  * [Word Embedding properties](#word-embedding-properties)
-  * [Mathematically Representation](#mathematically-representation)
-  * [Word Vectorization or Word Embeddings types](#word-vectorization-or-word-embeddings-types)
-    * [1. One-hot Encoding](#1-one-hot-encoding)
-    * [2. Word Embedding](#2-word-embedding)
-       * [Word2vec](#word2vec)
-          * [1) The Skip-Gram Model](#1-the-skip-gram-model)
-          * [2) The Continuous Bag of Words (CBOW) Model](#2-the-continuous-bag-of-words-cbow-model)
-        * Glove
+### [Text Preprocessing Level 3- _Word Embeddings(Word2vec, One-hot, The Skip-Gram Mode, CBOW, GLOVE)_](https://github.com/iAmKankan/Natural-Language-Processing-NLP-
 ### [_References_](#references-1)
 ## Natural Language Processing (NLP)
 ![deep](https://user-images.githubusercontent.com/12748752/150695343-8977b5d0-3cd4-4959-b90e-9fe72d336d42.png)
