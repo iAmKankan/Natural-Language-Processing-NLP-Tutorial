@@ -9,8 +9,14 @@
  * [NLP Roadmap](#nlp-roadmap)
 ### _NLP and Probability_
  * [_Why we need _Probability_ in NLP_?](https://github.com/iAmKankan/Mathematics/blob/main/probability/README.md)
-
-### [_Word Embeddings(Word2vec)_](https://github.com/iAmKankan/Natural-Language-Processing-NLP-Tutorial/blob/master/word_embedding.md)
+ 
+### [Text Preprocessing Level 1](https://github.com/iAmKankan/NaturalLanguageProcessing-NLP/tree/master/Text%20Preprocessing%20Level%23%201)
+  * [Stopwords](https://nbviewer.org/github/iAmKankan/NaturalLanguageProcessing-NLP/blob/master/NLP-Python/00_stopwords.ipynb)
+  * [Tokens](https://nbviewer.org/github/iAmKankan/NaturalLanguageProcessing-NLP/blob/master/NLP-Python/01_tokens.ipynb)
+  * [Stemming](https://nbviewer.org/github/iAmKankan/NaturalLanguageProcessing-NLP/blob/master/NLP-Python/02_stemming.ipynb)
+  * [Lammetization](https://nbviewer.org/github/iAmKankan/NaturalLanguageProcessing-NLP/blob/master/NLP-Python/03_lemmatization.ipynb)
+### [Text Preprocessing Level 2- Bag Of Words, TFIDF, Unigrams, Bigram](https://github.com/iAmKankan/NaturalLanguageProcessing-NLP/tree/master/Text%20Preprocessing%20Level%23%202)
+### [Text Preprocessing Level 3- _Word Embeddings(Word2vec)_](https://github.com/iAmKankan/Natural-Language-Processing-NLP-Tutorial/blob/master/word_embedding.md)
   * [Word Embeddings or Word vectorization](#word-embeddings-or-word-vectorization)
   * [What is Word Embedding?](#what-is-word-embedding)
   * [Word Embedding properties](#word-embedding-properties)
